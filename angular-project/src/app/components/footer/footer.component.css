@@ -1,0 +1,56 @@
+/*============================Footer=============================*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    padding: 120px 0px;
+    align-items: center;
+
+    background-color: #0E1D28;
+}
+
+.logo-footer a img {
+    width: 200px;
+}
+
+.link-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    grid-template-rows: repeat(1, auto); /* 1 ряди */
+    gap: 140px; /* відступи між елементами */
+}
+
+.link-item {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.link-item p {
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.link-item a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@media(max-width: 816px) {
+    /*============================Footer=============================*/
+    footer {
+        display: block;
+        justify-content: space-around;
+        padding: 120px 20px;
+        align-items: center;
+
+        background-color: #0E1D28;
+    }
+
+    .link-footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}

@@ -1,0 +1,88 @@
+/*==============================Benefits=============================*/
+.benefits-block {
+    position: relative;
+    max-width: 1160px;
+    margin: 0px 56px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    padding: 100px;
+
+    top: -150px;
+
+    background-color: white;
+    box-shadow:  10px 1px 50px 5px black
+}
+
+.benefits-block h1 {
+    margin-bottom: 120px;
+    font-size: 35px;
+}
+
+.container-cart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 55px;
+}
+  
+.column-cart {
+    max-width: 317px;
+    height: max-content;
+}
+
+.logo-cart {
+    width: 66px;
+    height: 66px;
+}
+
+.cart h3 {
+    margin: 30px 0px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cart p {
+    max-width: 300px;
+    font-size: 16px;
+}
+
+.cart h2 {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #006DFE;
+
+    cursor: pointer;
+}
+
+.cart h2 span {
+    margin-left: 20px;
+    transition: 0.4s;
+}
+
+.cart h2 span:hover {
+    margin-left: 25px;
+    transition: 0.4s;
+}
+
+@media(max-width: 816px) {
+
+    /*==============================Benefits=============================*/
+    .benefits-block {
+        top: -30px;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .container-cart{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 55px;
+    }
+
+    .column-cart {
+        margin: 0px auto;
+    }
+
+    .benefits-block,
+    .photo-block {
+        margin: 0px 20px;
+    }
+}

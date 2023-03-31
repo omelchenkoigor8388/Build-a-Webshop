@@ -1,0 +1,138 @@
+/*===========================Photo=============================*/
+.photo-block {
+    max-width: 1360px;
+    margin: 0px auto;
+    margin-bottom: 130px;
+    padding: 0px 20px;
+}
+
+.title-block {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+.title-block h1 {
+    font-size: 35px;
+}
+
+.block-blue {
+    width: 250px;
+    height: 2px;
+
+    background-color: #006DFE;
+}
+
+.button {
+    display: flex;
+}
+
+.button h2 {
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+
+    color: #006DFE;
+}
+
+.button h2 span {
+    margin-left: 10px;
+}
+
+.grid-container-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки з однаковою шириною */
+    grid-gap: 10px; /* відступи між елементами сітки */
+    margin-bottom: 10px;
+}
+  
+.grid-item-top {
+    position: relative;
+    cursor: pointer;
+    height: 364px;
+    background-color: #ccc; /* колір фону для елементів сітки */
+}
+
+.grid-item-top
+.grid-item-botton {
+    transition:  transform 0.3s;
+}
+
+.mount-photo {
+    background-image: url("./img-photo/Mount.png");
+    background-size: cover;
+
+}
+
+.kyoto-photo {
+    background-image: url("./img-photo/Kyoto.png");
+    background-size: cover;
+}
+
+.grid-item-top:hover,
+.grid-item-botton:hover {
+    transform: scale(1.02);
+}
+
+
+.grid-item-top h1,
+.grid-container-botton h1 {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+
+    color: white;
+}
+
+.grid-container-botton {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 колонки з однаковою шириною */
+    grid-gap: 10px; /* відступи між елементами сітки */
+}
+  
+.grid-item-botton {
+    position: relative;
+    cursor: pointer;
+    height: 283px;
+    background-color: #ccc; /* колір фону для елементів сітки */
+}
+
+.tokyo-photo {
+    background-image: url("./img-photo/Tokyo.png");
+    background-size: cover;
+}
+
+.niigata-photo {
+    background-image: url("./img-photo/Niigata.png");
+    background-size: cover;
+}
+
+.sapporo-photo {
+    background-image: url("./img-photo/Sapporo.png");
+    background-size: cover;
+}
+
+@media(max-width: 816px) {
+    /*===========================Photo=============================*/
+    .text h1 {
+        font-size: 20px;
+    }
+
+    .block-blue {
+        width: auto;
+    }
+
+    .grid-container-top,
+    .grid-container-botton {
+        display: block;
+    }
+
+    .grid-item-top,
+    .grid-item-botton {
+        margin-bottom: 10px;
+
+    }
+}

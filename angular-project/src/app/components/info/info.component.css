@@ -1,0 +1,100 @@
+/* ======================================Info================================ */
+.info-block {
+    max-width: 1360px;
+    margin: 0px auto;
+    padding: 0px 40px;
+}
+
+.header-info-block,
+.bottom-info-block {
+    display: flex;
+    margin-bottom: 75px;
+}
+
+
+.column {
+    flex-basis: 50%;
+}
+
+.info-home-img {
+    width: 600px;
+    height: 350px;
+}
+
+.column-text {
+    padding: 50px;
+}
+
+.bottom-info-block .column-text {
+    padding-left: 0px;
+}
+
+.column-text h1 {
+    font-size: 30px;
+    margin-bottom: 85px;
+}
+
+.column-text p {
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.button {
+    height: 60px;
+}
+
+.button h2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow {
+    width: 40px;
+    height: 20px;
+}
+
+
+@media(max-width: 816px) {
+    /* ======================================Info================================ */
+.info-block {
+    margin-top: 250px;
+}
+
+.header-info-block,
+.bottom-info-block {
+    display: block;
+}
+
+.header-info-block {
+    margin-bottom: 0px;
+}
+
+.bottom-info-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-home-img,
+.info-stairs-img {
+    width: 100%;
+    height: auto;
+}
+
+.column-text {
+    padding-left: 0px;
+}
+
+.column-text h1 {
+    margin-bottom: 0px;
+}
+
+.first {
+    order: 2;
+}
+
+.second {
+    order: 1;
+}
+}
+
